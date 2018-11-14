@@ -41,6 +41,7 @@ module Workshopper
 
       @content.workshop.vars.each_pair do |name, value|
         env[name] = value
+        puts env
       end if @content.workshop.vars
 
       @lab['vars'].each_key do |key|
